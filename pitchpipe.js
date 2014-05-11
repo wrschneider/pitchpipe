@@ -19,6 +19,7 @@ $(document).ready(function() {
    
    $("button.noteButton").click(function() {
      var noteId = $(this).data('buttonIndex');
-	 playNote(frequencies[noteId], 3000);
+	 var duration = $("select#duration").val();
+	 playNote(frequencies[noteId], duration * 1000);
    })
 });
