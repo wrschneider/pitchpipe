@@ -20,6 +20,7 @@ $(document).ready(function() {
    $("button.noteButton").click(function() {
      var noteId = $(this).data('buttonIndex');
 	 var duration = $("select#duration").val();
-	 playNote(frequencies[noteId], duration * 1000);
+	 var baselineFreq = $("select#baselineFreq").val();
+	 playNote(frequencies[noteId] * baselineFreq/440, duration * 1000);
    })
 });
