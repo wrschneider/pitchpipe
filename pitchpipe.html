@@ -23,8 +23,8 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 	<style>
-	.btn { width: 75px; margin-left: 3px; }
-	div.row { margin-top: 10px; }
+	.btn { width: 75px; margin-left: 3px; margin-top: 10px; }
+	
 	</style>
   </head>
 
@@ -33,27 +33,20 @@
     <div class="container">
 
       <div>
-        <h1>HTML5 Chromatic Pitchpipe</h1>
-        <p class="lead">Use the buttons below to generate tones with AudioContext oscillators</p>
-		<div class="row">
+        <h1>HTML5 Chromatic Pitch Pipe</h1>
+		<div style="min-width:300px; max-width:400px">
 		  <button class="btn btn-primary noteButton" data-note-id="f_low">F (low)</button>
 		  <button class="btn btn-primary noteButton" data-note-id="f_sharp">F&#x266f / G&#x266d;</button>
 		  <button class="btn btn-primary noteButton" data-note-id="g">G</button>
 		  <button class="btn btn-primary noteButton" data-note-id="g_sharp">G&#x266f / A&#x266d;</button>
-		</div>
-		<div  class="row">
 		  <button class="btn btn-primary noteButton" data-note-id="a">A</button>
 		  <button class="btn btn-primary noteButton" data-note-id="a_sharp">A&#x266f / B&#x266d;</button>
 		  <button class="btn btn-primary noteButton" data-note-id="b">B</button>
 		  <button class="btn btn-primary noteButton" data-note-id="c">C</button>
-		</div>
-		<div  class="row">
 		  <button class="btn btn-primary noteButton" data-note-id="c_sharp">C&#x266f / D&#x266d;</button>
 		  <button class="btn btn-primary noteButton" data-note-id="d">D</button>
 		  <button class="btn btn-primary noteButton" data-note-id="d_sharp">D&#x266f / E&#x266d;</button>
 		  <button class="btn btn-primary noteButton" data-note-id="e">E</button>
-		</div>
-	    <div  class="row">
 		  <button class="btn btn-primary noteButton" data-note-id="f_high">F (high)</button>
 		</div>
       
