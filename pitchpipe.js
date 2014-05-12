@@ -1,16 +1,30 @@
 $(document).ready(function() {
    var AudioContext = window.AudioContext || window.webkitAudioContext;
    var audioContext = new AudioContext();
-   var frequencies = [349.23, 369.99, 392.00, 415.30, 440.00, 466.16, 493.88, 523.25, 554.37, 587.33, 622.25, 659.25, 698.46];
+   var frequencies = {
+	f_low: 349.23, 
+	f_sharp: 369.99, 
+	g: 392.00, 
+	g_sharp: 415.30, 
+	a: 440.00, 
+	a_sharp: 466.16, 
+	b: 493.88, 
+	c: 523.25, 
+	c_sharp: 554.37, 
+	d: 587.33, 
+	d_sharp: 622.25, 
+	e: 659.25, 
+	f_high: 698.46};
+	
    var currOscillator;
    
-   var playNote = function playNote(freq, duration) {
+   var playNote = function playNote(freq, duration, waveform) {
 	 if (currOscillator) {
 	   currOscillator.noteOff(0);
 	 }
      var osc = audioContext.createOscillator();
 	 osc.frequency.value = freq;
-	 osc.type = 1;
+	 osc.type = waveform;
 	 osc.connect(audioContext.destination);
 	 osc.noteOn(0);
 	 setTimeout(function() { osc.noteOff(0); }, duration);
@@ -18,9 +32,10 @@ $(document).ready(function() {
    }
    
    $("button.noteButton").click(function() {
-     var noteId = $(this).data('buttonIndex');
+     var noteId = $(this).data('noteId');
 	 var duration = $("select#duration").val();
-	 var baselineFreq = $("select#baselineFreq").val();
-	 playNote(frequencies[noteId] * baselineFreq/440, duration * 1000);
+	 var baselineFreq = $('select[name="baselineFreq"]').val();
+	 var waveform = $('select[name="waveform"]').val();
+	 playNote(frequencies[noteId] * baselineFreq/440, duration * 1000, Number(waveform));
    })
 });
