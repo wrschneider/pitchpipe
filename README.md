@@ -1,7 +1,7 @@
 HTML5 Chromatic Pitch Pipe
 =========
 
-This is a chromatic pitch pipe using HTML5 AudioContext.  I started this as an experiment to learn about AudioContext to generate musical tones, the same way I did with an IBM PC speaker a few decades ago.  The ocatve goes from F to F to match the range of the pipe that barbershop groups typically use.
+This is a chromatic pitch pipe using HTML5 AudioContext.  I started this as a personal experiment to learn about AudioContext to generate musical tones, the same way I did with an IBM PC speaker a few decades ago.  The ocatve goes from F to F to match the range of the pipe that barbershop groups typically use.
 
 To use it, clone or download as a ZIP and then point your browser at pitchpipe.html (no server required.)
 
