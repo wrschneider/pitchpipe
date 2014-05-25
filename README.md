@@ -5,7 +5,7 @@ This is a chromatic pitch pipe using HTML5 AudioContext.  I started this as a pe
 
 To use it, clone or download as a ZIP and then point your browser at pitchpipe.html (no server required.)
 
-Alternatively, you can see an HTML preview of the master directly at http://goo.gl/LUch1p
+Alternatively, you can see an HTML preview of the master directly at http://goo.gl/xD6VzJ
 
 I tested this with Chrome, and Safari on an iPhone.
 
