@@ -20,14 +20,14 @@ $(document).ready(function() {
    
    var playNote = function playNote(freq, duration, waveform) {
 	 if (currOscillator) {
-	   currOscillator.noteOff(0);
+	   currOscillator.stop(0);
 	 }
      var osc = audioContext.createOscillator();
 	 osc.frequency.value = freq;
 	 osc.type = waveform;
 	 osc.connect(audioContext.destination);
-	 osc.noteOn(0);
-	 setTimeout(function() { osc.noteOff(0); }, duration);
+	 osc.start(0);
+	 setTimeout(function() { osc.stop(0); }, duration);
 	 currOscillator = osc;
    }
    
@@ -36,6 +36,6 @@ $(document).ready(function() {
 	 var duration = $("select#duration").val();
 	 var baselineFreq = $('select[name="baselineFreq"]').val();
 	 var waveform = $('select[name="waveform"]').val();
-	 playNote(frequencies[noteId] * baselineFreq/440, duration * 1000, Number(waveform));
+	 playNote(frequencies[noteId] * baselineFreq/440, duration * 1000, waveform);
    })
 });
