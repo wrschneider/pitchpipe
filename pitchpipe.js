@@ -27,7 +27,10 @@ $(document).ready(function() {
 	 osc.type = waveform;
 	 osc.connect(audioContext.destination);
 	 osc.start(0);
-	 setTimeout(function() { osc.stop(0); }, duration);
+	 setTimeout(function() { 
+	   osc.stop(0); 
+	   currOscillator = undefined; 
+	 }, duration);
 	 currOscillator = osc;
    }
    
