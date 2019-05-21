@@ -29,7 +29,6 @@ $(document).ready(function() {
      osc.start(0);
      setTimeout(function() {
        osc.stop(0);
-       currOscillator = undefined;
      }, duration);
      currOscillator = osc;
    }
