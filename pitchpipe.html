@@ -12,7 +12,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
 
     <!-- Custom styles for this template -->
     <link href="starter-template.css" rel="stylesheet">
@@ -22,10 +22,9 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-	<style>
-	.btn { width: 75px; margin-left: 3px; margin-top: 10px; }
-	
-	</style>
+    <style>
+      .btn { width: 75px; margin-left: 3px; margin-top: 10px; }
+    </style>
   </head>
 
   <body>
@@ -34,58 +33,58 @@
 
       <div>
         <h3>Chromatic Pitch Pipe</h3>
-		<div style="min-width:300px; max-width:400px">
-		  <button class="btn btn-primary noteButton" data-note-id="f_low">F (low)</button>
-		  <button class="btn btn-primary noteButton" data-note-id="f_sharp">F&#x266f / G&#x266d;</button>
-		  <button class="btn btn-primary noteButton" data-note-id="g">G</button>
-		  <button class="btn btn-primary noteButton" data-note-id="g_sharp">G&#x266f / A&#x266d;</button>
-		  <button class="btn btn-primary noteButton" data-note-id="a">A</button>
-		  <button class="btn btn-primary noteButton" data-note-id="a_sharp">A&#x266f / B&#x266d;</button>
-		  <button class="btn btn-primary noteButton" data-note-id="b">B</button>
-		  <button class="btn btn-primary noteButton" data-note-id="c">C</button>
-		  <button class="btn btn-primary noteButton" data-note-id="c_sharp">C&#x266f / D&#x266d;</button>
-		  <button class="btn btn-primary noteButton" data-note-id="d">D</button>
-		  <button class="btn btn-primary noteButton" data-note-id="d_sharp">D&#x266f / E&#x266d;</button>
-		  <button class="btn btn-primary noteButton" data-note-id="e">E</button>
-		  <button class="btn btn-primary noteButton" data-note-id="f_high">F (high)</button>
-		</div>
-      
-	  <div style="width:200px">
-	  <div class="form-group">
-		  <label for="duration">Duration in seconds </label>
-		  <select class="form-control" id="duration">
-			<option value="1">1</option>
-			<option value="2">2</option>
-			<option value="3" selected="selected">3</option>
-			<option value="4">4</option>
-			<option value="5">5</option>
-			<option value="6">6</option>
-			<option value="7">7</option>
-			<option value="8">8</option>
-			<option value="9">9</option>
-		  </select>
-	   </div>
-	   
-	   <div class="form-group">
-		<label for="baselineFreq">Baseline frequency</label>
-		<select class="form-control" name="baselineFreq">
-			<option value="440" selected="selected">A = 440 Hz</option>
-			<option value="443">A = 443 Hz</option>
-			<option value="445">A = 445 Hz</option>
-		</select>
-		</div>
-		
-		<div class="form-group">
-		<label for="oscType">Waveform</label>
-		<select class="form-control" name="waveform">
-			<option value="sine" selected="selected">Sine</option>
-			<option value="square">Square</option>
-			<option value="triangle">Triangle</option>
-		</select>
-		</div>
-	  </div>
-	  </div>
-	  
+        <div style="min-width:300px; max-width:400px">
+          <button class="btn btn-primary noteButton" data-note-id="f_low">F (low)</button>
+          <button class="btn btn-primary noteButton" data-note-id="f_sharp">F&#x266f / G&#x266d;</button>
+          <button class="btn btn-primary noteButton" data-note-id="g">G</button>
+          <button class="btn btn-primary noteButton" data-note-id="g_sharp">G&#x266f / A&#x266d;</button>
+          <button class="btn btn-primary noteButton" data-note-id="a">A</button>
+          <button class="btn btn-primary noteButton" data-note-id="a_sharp">A&#x266f / B&#x266d;</button>
+          <button class="btn btn-primary noteButton" data-note-id="b">B</button>
+          <button class="btn btn-primary noteButton" data-note-id="c">C</button>
+          <button class="btn btn-primary noteButton" data-note-id="c_sharp">C&#x266f / D&#x266d;</button>
+          <button class="btn btn-primary noteButton" data-note-id="d">D</button>
+          <button class="btn btn-primary noteButton" data-note-id="d_sharp">D&#x266f / E&#x266d;</button>
+          <button class="btn btn-primary noteButton" data-note-id="e">E</button>
+          <button class="btn btn-primary noteButton" data-note-id="f_high">F (high)</button>
+        </div>
+
+        <div style="width:200px">
+          <div class="form-group">
+            <label for="duration">Duration in seconds </label>
+            <select class="form-control" id="duration">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3" selected="selected">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="baselineFreq">Baseline frequency</label>
+            <select class="form-control" name="baselineFreq">
+              <option value="440" selected="selected">A = 440 Hz</option>
+              <option value="443">A = 443 Hz</option>
+              <option value="445">A = 445 Hz</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="oscType">Waveform</label>
+            <select class="form-control" name="waveform">
+              <option value="sine" selected="selected">Sine</option>
+              <option value="square">Square</option>
+              <option value="triangle">Triangle</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
     </div><!-- /.container -->
 
 
@@ -94,6 +93,6 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-	<script src="./pitchpipe.js"></script>
+    <script src="./pitchpipe.js"></script>
   </body>
 </html>
